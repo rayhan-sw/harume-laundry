@@ -3,7 +3,6 @@
   --bg: #ffffff;
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +15,6 @@
 html {
   scroll-behavior: smooth;
 }
-
 
 body {
   font-family: "Poppins", sans-serif;
@@ -419,24 +417,16 @@ footer .credit a {
 
 /* Mobile Phone */
 @media (max-width: 450px) {
-  .navbar-logo img {
-    height: 50px; /* Resize for smaller screens */
-    width: auto;
-    transform: scale(0.7);
-    transform-origin: center;
-  }
-
-  .hero {
-    flex-direction: column; /* Stack text and image vertically on smaller screens */
-    text-align: center;
-  }
-
   .hero .hero-image {
-    margin-top: 20px;
-    text-align: center; /* Center the image on small screens */
+    margin-top: 10px;
+    width: 90%; /* Increase the size slightly on mobile */
+    max-width: 100%; /* Ensures the image fits its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto;
   }
 
   html {
-    font-size: 55%;
+    font-size: 50%;
   }
 }
